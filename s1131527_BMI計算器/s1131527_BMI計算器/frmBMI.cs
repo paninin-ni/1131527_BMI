@@ -55,6 +55,49 @@ namespace s1131527_BMI計算器
                 MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
+
+            // 將身高從公分轉換為公尺
+            height = height / 100;
+            // 計算BMI
+            double bmi = weight / (height * height);
+
+            string[] strResultList = { "體重過輕", "健康體位", "體位過重", "輕度肥胖","中度肥胖", "重度肥胖" };
+            Color[] colorList = { Color.Blue, Color.Green, Color.Orange,Color.DarkOrange, Color.Red, Color.Purple };
+
+            string strResult = "";
+            Color colorResult = Color.Black;
+            int resultIndex = 0;
+            if (bmi < 18.5)
+            {
+                resultIndex = 0;
+            }
+            else if (bmi < 24)
+            {
+                resultIndex = 1;
+            }
+            else if (bmi < 27)
+            {
+                resultIndex = 2;
+            }
+            else if (bmi < 30)
+            {
+                resultIndex = 3;
+            }
+            else if (bmi < 35)
+            {
+                resultIndex = 4;
+            }
+            else
+            {
+                resultIndex = 5;
+            }
+            strResult = strResultList[resultIndex];
+            colorResult = colorList[resultIndex];
+            lblResult.Text = $"{bmi:F2} ({strResult})";
+            lblResult.BackColor = colorResult;
+
+            double idealWeight = 22 * (height * height);
+            label1.Text = $"理想體重: {idealWeight:F1} kg";
         }
 
     }

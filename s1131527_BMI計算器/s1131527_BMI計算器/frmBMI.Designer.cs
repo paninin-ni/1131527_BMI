@@ -37,6 +37,9 @@
             this.grpOutput = new System.Windows.Forms.GroupBox();
             this.lblResult = new System.Windows.Forms.Label();
             this.lblBMI = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.grpInput.SuspendLayout();
             this.grpOutput.SuspendLayout();
             this.SuspendLayout();
@@ -106,12 +109,15 @@
             // 
             // grpOutput
             // 
+            this.grpOutput.Controls.Add(this.label3);
+            this.grpOutput.Controls.Add(this.label2);
+            this.grpOutput.Controls.Add(this.label1);
             this.grpOutput.Controls.Add(this.lblResult);
             this.grpOutput.Controls.Add(this.lblBMI);
             this.grpOutput.Font = new System.Drawing.Font("PMingLiU", 10F);
             this.grpOutput.Location = new System.Drawing.Point(39, 310);
             this.grpOutput.Name = "grpOutput";
-            this.grpOutput.Size = new System.Drawing.Size(644, 169);
+            this.grpOutput.Size = new System.Drawing.Size(644, 218);
             this.grpOutput.TabIndex = 0;
             this.grpOutput.TabStop = false;
             this.grpOutput.Text = "計算結果";
@@ -120,11 +126,13 @@
             // 
             this.lblResult.AutoSize = true;
             this.lblResult.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblResult.Location = new System.Drawing.Point(339, 85);
+            this.lblResult.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblResult.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblResult.Location = new System.Drawing.Point(330, 85);
             this.lblResult.Name = "lblResult";
-            this.lblResult.Size = new System.Drawing.Size(266, 29);
+            this.lblResult.Size = new System.Drawing.Size(275, 42);
             this.lblResult.TabIndex = 3;
-            this.lblResult.Text = "                                    ";
+            this.lblResult.Text = "                                ";
             this.lblResult.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblBMI
@@ -136,6 +144,34 @@
             this.lblBMI.Size = new System.Drawing.Size(289, 40);
             this.lblBMI.TabIndex = 2;
             this.lblBMI.Text = "身體質量指數(BMI)";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(23, 149);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(274, 40);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "理想體重:  0.0   kg";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(181, 149);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(0, 40);
+            this.label2.TabIndex = 5;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(223, 149);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(0, 40);
+            this.label3.TabIndex = 6;
             // 
             // frmBMI
             // 
@@ -166,6 +202,9 @@
         private System.Windows.Forms.TextBox txtWeight;
         private System.Windows.Forms.Label lblResult;
         private System.Windows.Forms.Button btnRun;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }
 
