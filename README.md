@@ -8,4 +8,4 @@
 > 2. 點擊計算：按下「計算」按鈕後，程式會自動進行單位轉換與邏輯判斷
 > 3. 查看結果：BMI 指數：顯示於文字框，並根據結果變更背景顏色（如：健康為綠色、肥胖為紅色）/ 理想體重：程式依據身高自動算出理想體重 
 
-<img width="337" height="305" alt="Image" src="https://github.com/user-attachments/assets/0fc0e432-d338-47a9-bd78-0329cbaf2eee" />
+[<img width="337" height="305" alt="Image" src="https://github.com/user-attachments/assets/0fc0e432-d338-47a9-bd78-0329cbaf2eee" />](https://github.com/paninin-ni/1131527_BMI/issues/1#issue-4171536196)
